@@ -180,7 +180,10 @@ start_date and end_date (string): Define the date range for filtering data (form
 
 | Route                        | Method | Body                            | Sample Response                        | Description                          |
 |-----------------------------|--------|---------------------------------|----------------------------------------|--------------------------------------|
-| `/admin/reports/insertData`  | `POST`  | `file` (Form Data - CSV file)   | `{ "message": "Data inserted successfully" }` | Uploads a CSV file for data insertion |
+| `/admin/reports/insertData`  | `POST`  | `file` (Form Data - CSV file)   | `{ "message": "" }` | Uploads a CSV file for data insertion |
+| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 1)   | `{ "message": "" }` |For customets total |
+| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 2))   | `{ "message": "" }` | For orders total |
+| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 3)   | `{ "message": "" }` | For avg order value total |
 
 
 **Troubleshooting**
