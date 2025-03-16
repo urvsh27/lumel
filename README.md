@@ -181,9 +181,9 @@ start_date and end_date (string): Define the date range for filtering data (form
 | Route                        | Method | Body                            | Sample Response                        | Description                          |
 |-----------------------------|--------|---------------------------------|----------------------------------------|--------------------------------------|
 | `/admin/reports/insertData`  | `POST`  | `file` (Form Data - CSV file)   | `{ "message": "" }` | Uploads a CSV file for data insertion |
-| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 1)   | `{ "message": "" }` |For customets total |
-| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 2))   | `{ "message": "" }` | For orders total |
-| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 3)   | `{ "message": "" }` | For avg order value total |
+| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 1) `start_date` (For date range) `end_date` (For date range)   | `{"data":{"totalCustomers":"3"},"message":""}` |For customets total |
+| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 2)) `start_date` (For date range) `end_date` (For date range)    | `{"data":{"totalOrders":"6"},"message":""}` | For orders total |
+| `/admin/reports/typeWiseData`  | `GET`  | `type` (value = 3)  `start_date` (For date range) `end_date` (For date range)   | `{"data":{"averageOrderValue":827.83},"message":""}` | For avg order value total |
 
 
 **Troubleshooting**
