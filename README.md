@@ -105,44 +105,42 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
   - **Average Order Value:** (Within a date range)
 
 
-Project Setup and Usage Guide
+**Project Setup and Usage Guide**
 
-Prerequisites
+**Prerequisites**
 
-Before starting, ensure you have the following installed:
+-Before starting, ensure you have the following installed:
 
-Node.js (Latest LTS recommended)
+-Node.js (Latest LTS recommended),Postman (For testing APIs)
 
-Postman (For testing APIs)
+**Installation Steps**
 
-Installation Steps
-
-Clone the Repository
+1. Clone the Repository
 
 git clone <repository-url>
 cd <project-folder>
 
-Add Configuration File
+2. Add Configuration File
 
-Place the provided config.yml file in the root directory of the project.
+Place the provided (attached in email) config.yml file in the root directory of the project.
 
-Install Dependencies
+3. Install Dependencies
 
-npm install
+`npm i`
 
-Run the Project
+4. Run the Project
 
-npm run start:dev
+`npm run start:dev`
 
 The project should now be running successfully.
 
-Postman Collection
+5. Postman Collection
 
 The attached .zip file contains a Postman collection for testing the APIs.
 
 Import this collection directly into Postman for ease of use.
 
-API Endpoints
+**API Endpoint**
 
 1. /insertData
 
@@ -172,7 +170,7 @@ type (integer): Defines the type of data required
 
 start_date and end_date (string): Define the date range for filtering data (format: YYYY-MM-DD).
 
-Troubleshooting
+**Troubleshooting**
 
 If you face any issues while running the project, feel free to reach out at urvishmakwana28@gmail.com.
 
