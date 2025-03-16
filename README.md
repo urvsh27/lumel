@@ -123,7 +123,8 @@ cd <project-folder>
 2. Add Configuration File
 
 Place the provided (attached in email) config.yml file in the root directory of the project.
-
+- Use local postgresql database for large datasets.
+  
 3. Install Dependencies
 
 `npm i`
@@ -169,6 +170,18 @@ type (integer): Defines the type of data required
 3 = Average Order Value
 
 start_date and end_date (string): Define the date range for filtering data (format: YYYY-MM-DD).
+
+
+**Api Table**
+
+# API Documentation
+
+## List of APIs
+
+| Route                        | Method | Body                            | Sample Response                        | Description                          |
+|-----------------------------|--------|---------------------------------|----------------------------------------|--------------------------------------|
+| `/admin/reports/insertData`  | `POST`  | `file` (Form Data - CSV file)   | `{ "message": "Data inserted successfully" }` | Uploads a CSV file for data insertion |
+
 
 **Troubleshooting**
 
