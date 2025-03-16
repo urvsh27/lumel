@@ -105,3 +105,75 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
   - **Average Order Value:** (Within a date range)
 
 
+Project Setup and Usage Guide
+
+Prerequisites
+
+Before starting, ensure you have the following installed:
+
+Node.js (Latest LTS recommended)
+
+Postman (For testing APIs)
+
+Installation Steps
+
+Clone the Repository
+
+git clone <repository-url>
+cd <project-folder>
+
+Add Configuration File
+
+Place the provided config.yml file in the root directory of the project.
+
+Install Dependencies
+
+npm install
+
+Run the Project
+
+npm run start:dev
+
+The project should now be running successfully.
+
+Postman Collection
+
+The attached .zip file contains a Postman collection for testing the APIs.
+
+Import this collection directly into Postman for ease of use.
+
+API Endpoints
+
+1. /insertData
+
+Method: POST
+
+Purpose:
+
+Insert CSV data into the system.
+
+Can also be triggered as a cron-job to refresh data periodically.
+
+2. /typeWiseData
+
+Method: GET
+
+Purpose: Provides analytical insights based on customer data.
+
+Query Parameters:
+
+type (integer): Defines the type of data required
+
+1 = Total Customers
+
+2 = Total Orders
+
+3 = Average Order Value
+
+start_date and end_date (string): Define the date range for filtering data (format: YYYY-MM-DD).
+
+Troubleshooting
+
+If you face any issues while running the project, feel free to reach out at urvishmakwana28@gmail.com.
+
+
