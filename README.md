@@ -41,7 +41,11 @@ Place the provided (attached in email) config.yml file in the root directory of 
 
 The project should now be running successfully.
 
-5. Postman Collection
+5. Tables and Trigger
+
+If the database is new then in `pgmodule.ts` file keep the s`ynchronize = true` and Add the trigger via pg admin which is in `triggers.ts` file.
+
+6. Postman Collection
 
 The attached .zip file contains a Postman collection for testing the APIs.
 
